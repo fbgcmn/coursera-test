@@ -1,45 +1,25 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Non farlo!</title>
+        <title>Stripe Gradient</title>
+        <script src="Gradient.js" ></script>
     </head>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+        }
+        #gradient-canvas {
+            --gradient-color-1: #6ec3f4;
+            --gradient-color-2: #3a3aff;
+            --gradient-color-3: #ff61ab;
+            --gradient-color-4: #E63946;
+        }
+    </style>
     <body>
-        <header>
-            Questa parte è l'intestazione della pagina.
-        </header>
-    
-            <h1 style="color:greenyellow;fontsize=60px";>CIKI ti prego non suicidarti</h1>
-<section>
-    Sezione 1
-<article>Articolo 1</article>
-<article>Articolo 2</article>
-<article>Articolo 3</article>
-</section>
-
-<section>
-    Sezione 2
-<article>Articolo 1</article>
-<article>Articolo 2</article>
-<article>Articolo 3</article>
-</section>
-
-<ul>
-<li>Mene</li>
-<li>SuperMene</li>
-Ciki
-Ryan
-Eros
-</ul>
-
-<footer>
-    <hr>
-    <p style="text-align: center;"
-    onclick="alert('é inutile pezzo di merda');">
-        FG copyright 2021
-    </p>
-    
-</footer>
+        <canvas id="gradient-canvas" style="width:100vw;height:100vh"></canvas>
+        <script>
+            var gradient = new Gradient()
+            gradient.initGradient('#gradient-canvas');
+        </script>
     </body>
-
 </html>
